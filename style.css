@@ -1,0 +1,427 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+}
+
+.h1{
+    font-size: 1.5rem;
+    text-align: center;
+
+
+}
+h2{
+    font-size: 1.5rem;
+    text-align: center;
+}
+a{
+    color: white;
+    text-decoration: none;
+    padding: 1% 1%;
+    font-size: 1.5rem;
+}
+p{
+    font-size: 1.2rem;
+    text-align: justify;
+}
+[class*="col-"]{
+    float: left;
+    padding: 10px;
+}
+[class*="col-"]{
+    width: 100%;
+}
+/* navbar degings start*/
+.navbar{
+    background-color: #0c6168;
+    text-align: center;
+
+}
+.navbar h1{
+    color: white;
+    margin: 0;
+    padding: 10px;
+}
+.navbar-menu{
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+
+
+}
+.navbar-menu a{
+    border-radius: 10px;
+    margin: 7px 0px;
+    padding: 10px;
+
+
+
+}
+.navbar-menu a:hover{
+    background-color: grey;
+}
+.navbar::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+/*navbar degins end*/
+
+
+/* profile designed starts here*/
+
+.profile{
+    padding: 130px 10px;
+    position: relative;
+    text-align: center;
+
+}
+.profile .top-whether-icon{
+    position: absolute;
+    right: 60px;
+    top: 20px;
+    width: 150px;
+    height: 120px;
+    transition: transform 2s;
+}
+.profile .top-whether-icon:hover{
+    transform: rotate(360deg);
+}
+.profile-desc h1{
+    font-family: 'satisfy',cursive;
+    font-size: 3rem;
+
+}
+.profile-desc p{
+    color: grey;
+    margin: 0 auto 20px auto;
+    text-align: center;
+    width: 90%;
+
+}
+.profile .bottom-whether-icon{
+    position: absolute;
+    left: 0px;
+    bottom: 10px;
+    width: 150px;
+    height: 120px;
+    bottom:0px;
+    transition: transform 2s;
+}
+.profile .bottom-whether-icon:hover{
+    transform: rotate(360deg);
+}
+.profile::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+/* profile designed ends here*/
+
+
+
+
+
+
+
+* {
+  box-sizing: border-box;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* about us design starts here  */
+
+
+.about-us{
+    background-color: #39a4ac;
+    padding: 1% 7%;
+    color: white;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.aboutus-image img{
+    border: 5px solid white;
+    border-radius: 50%;
+    height: 220px;
+    width: 200px;
+}
+
+.about-us h1{
+    text-align: center;
+}
+
+.about-us h1,h2{
+    font-size: 1.2rem;
+}
+
+.cv-button{
+    background-color: #052d2f;
+    color: white;
+    border:none;
+    border-radius: 12px;
+    padding: 15px;
+    font-size: 1rem;
+    cursor: pointer;
+    text-align: center;
+    margin: 10px;
+}
+
+
+
+.about-us::after{
+    clear: both;
+    display: table;
+    content: '';
+}
+
+/* about me design ends here  */
+
+
+
+
+/* professional-experience starts here */
+
+.professional-experience{
+    padding: 1% 0%;
+}
+
+.professional-experience .card{
+    background-color: #a39e9e;
+    border-radius: 5px;
+    padding: 10px;
+    transition: 0.3s;
+    /* height: 700px; */
+}
+
+.card:hover{
+    box-shadow: 0 4px 8px 5px black;
+}
+
+.card-icon{
+    text-align: center;
+}
+
+.card-icon img{
+    margin-top: 20px;
+    width: 100px;
+}
+
+.rounded-img{
+    border: 5px solid white;
+    border-radius: 50%;
+    padding: 15px;
+}
+
+.card-title h2{
+    background-color: #616161;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+.scheme-container{
+    padding-right: 45px;
+}
+
+.scheme-container li{
+    list-style: none;
+    font-weight: bolder;
+    margin: 30px 10px;
+    position: relative;
+    text-transform: uppercase;
+}
+
+
+
+
+
+.professional-experience::after{
+   clear: both;
+   display: table;
+   content: '';
+}
+/* professional-experience ends here  */
+
+
+/* contact starts from here  */
+.achievemnet-contact{
+    padding: 1% 7%;
+    background-color: #39a4ac;
+    color: white;
+}
+
+.contact{
+    text-align: center;
+}
+
+.contact input, textarea{
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    resize: none;
+}
+
+.contact button{
+    border: none;
+    border-radius: 12px;
+    background-color: #052d2f;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    margin: 10px;
+    width: 100px;
+}
+
+
+.contact-links{
+    text-align: center;
+}
+
+.media-buttons .btn{
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 32px;
+    padding: 5px;
+    margin: 10px;
+    width: 50px;
+    background-color: white;
+}
+.btn:hover{
+    background-color: gray;
+}
+
+.achievemnet-contact::after{
+    clear: both;
+    display: table;
+    content: '';
+ }
+
+/*contact ends here  */
+
+/* footer starts from here  */
+.footer{
+    background-color: black;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 0.8rem;
+
+}
+
+.footer-menu a{
+    display: block;
+    margin: 15px 0;
+    font-size: 1rem;
+}
+
+.footer-menu a:hover{
+    color: gray;
+}
+
+.footer::after{
+    display: table;
+    content: '';
+    clear: both;
+}
+
+
+/* footer ends here  */

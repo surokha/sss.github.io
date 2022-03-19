@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="icon" type="image/x-icon" href="SNL2.ico">
+<meta charset="utf-8">
+  <meta http-equiv="refresh" content="60">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surokha Nidhi Limited</title>
+    <link rel="shortcut icon" href="/ramp2.ico">
+    <!-- for mobile -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+<!-- for desktop   -->
+    <link rel="stylesheet" type="text/css" href="desktop.css" media="screen and (min-width:992px)">
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <!----- navbar start from hear     --->
+
+    <div class="navbar">
+        <div class="nav-logo col-2">
+            <img src="f4.png">
+            
+        </div>
+        <div class="nav-heading col-4">
+            <h1>Surokha Nidhi Limited</h1>
+            
+        </div>
+        <div class="navbar-menu col-6">
+            <a href="#">Home</a>
+            <a href="#about-us-id">About</a>
+            <a href="#scheme-id">Scheme</a>
+            <a href="#contact-id">Contact Us</a>
+
+            
+        </div>
+        
+
+
+    </div>
+    <!-- navbar ends here -->
+
+   
+
+
+
+
+
+
+
+
+<!-- Container for the image gallery -->
+<div class="container">
+
+  <!-- Full-width images with number text -->
+  <div class="mySlides">
+    <div class="numbertext">1 / 6</div>
+      <img src="fixed.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">2 / 6</div>
+      <img src="daily.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 6</div>
+      <img src="recuring.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">4 / 6</div>
+      <img src="business.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">5 / 6</div>
+      <img src="gold.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">6 / 6</div>
+      <img src="against.jpg" style="width:100%">
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+  <!-- Image text -->
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+
+  <!-- Thumbnail images -->
+  <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="fixed.jpg" style="width:100%" onclick="currentSlide(1)" alt="Fixed Deposite">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="daily.jpg" style="width:100%" onclick="currentSlide(2)" alt="Daily Deposite">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="recuring.jpg" style="width:100%" onclick="currentSlide(3)" alt="Recuring Deposite">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="business.jpg" style="width:100%" onclick="currentSlide(4)" alt="Business Loan">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="gold.jpg" style="width:100%" onclick="currentSlide(5)" alt="Gold Loan">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="against.jpg" style="width:100%" onclick="currentSlide(6)" alt="Against Deposite Loan">
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+
+
+
+
+
+
+
+
+
+
+
+ <!-- about us starts here  -->
+
+     <div class="about-us" id="about-us-id">
+        <h2>ABOUT US</h2>
+        <hr class="dotted-hr">       
+        <div class="aboutus-image col-6">
+            <img src="SNL2.png" width="200px" height="190px">
+        </div>
+        <div class="aboutus-desc col-6">
+            <p style="color:Tomato;"><b>WELCOME TO SUROKHA NIDHI LIMITED</b> </p>
+            <h1>Surokha Nidhi Ltd is a Nidhi company having registered office at Surokha Nidhi Ltd Santipur,Nadia, 741104. The object of the Company is to encourage and afford all facilities for cultivating thrift, saving habits and to render all financial assistance to its member only by receiving long and short term deposits and lend, grant loans to them as are allowed by law for Nidhi or Mutual Benefits Companies.</h1>
+        </br>
+        <h2>Fixed deposits (FD), Recurring Deposits (R.D), Monthly Installment Scheme (MIS) under various scheme formulated from time to time by company and to provide interest or benefit on the deposits, as is fit for and beneficial to the company and to the members as per the rules & regulations or guidelines of Reserve Bank of India (RBI), Ministry of corporate affairs and regulatory authority on NBFC or NIDHI.</h2>
+           
+    
+        </div>
+
+    </div>
+
+    <!-- about me ends here  -->
+
+
+
+     <!-- professional experience start here  -->
+
+
+    <div class="professional-experience">
+
+
+
+        <div class="deposite col-4">
+            
+            <div class="card">
+                <div class="card-icon">
+                    <img class="rounded-img" src="depositeicon.png" alt="deposite icon">
+                </div>
+                <div class="card-title">
+                    <h2>DEPOSITE SCHEMES</h2>
+                </div>
+
+                <div class="card-desc">
+                    <ol>
+                        
+                         </li>
+                         <hr>
+                         <li>
+                            <strong>FIXED DEPOSITE SCHEME</strong> <br>
+                            A fixed deposit is a financial instrument where a member gets assured ROI. It is an investment opportunity provided by Surokha Nidhi Ltd. with the benefits of higher rate of interest than a Normal Saving Account.<br>
+
+
+                         </li>
+                         <hr>
+                         <li>
+                            <strong>DAILY DEPOSITE SCHEME</strong> <br>
+                            Daily Deposit Scheme is a monetary deposit scheme introduced by Surokha Nidhi Ltd. to help daily wage earners, small traders, to inculcate saving habits and also as a way of funding their bigger capital requirements.<br>
+                           
+                         </li>
+                         <hr>
+                         <li>
+                            <strong>MONTHLY DEPOSITE SCHEME</strong> <br>
+                            Daily Deposit Scheme is a monetary deposit scheme introduced by Surokha Nidhi Ltd. to help daily wage earners, small traders, to inculcate saving habits and also as a way of funding their bigger capital requirements.<br>
+                        </li>
+                        <hr>
+                        <li>
+                            <strong>RECURRING DEPOSITE SCHEME</strong><br>
+                            Recurring Deposit is a special kind of Term Deposit offered by Surokha Nidhi Ltd. which help members with regular incomes to deposit a fixed amount in every month into their Recurring Deposit account and earn interest at the rate applicable.<br>
+
+                        </li>
+                    </ol>
+                </div>
+        </div>
+        </div>
+
+        <div class="skills col-4" id="scheme-id">
+            <div class="card">
+                <div class="card-icon">
+                    <img class="rounded-img" src="loanicon.png" alt="work icon">
+                </div>
+                <div class="card-title">
+                    <h2>LOAN SCHEMES</h2>
+                </div>
+
+                <div class="card-desc">
+                        <ol>
+                        
+                         </li>
+                         <hr>
+                         <li>
+                            <strong> GENERAL LOAN</strong> <br>
+                            Provides self-employed women financial assistance to support their business enterprises, such as raising livestock, running local retail shops called Kirana stores, providing tailoring and other assorted trades and services.<br>
+
+
+                         </li>
+                         <hr>
+                         <li>
+                            <strong> BUSINESS LOAN</strong> <br>
+                            This loan will be given for the purpose of the business by mortgaging the immovable property of the borrower after considering security, repayment capacity, credit worthiness and fulfilling documentation procedures and maximum tenure.<br>
+                           
+                         </li>
+                         <hr>
+                         <li>
+                            <strong>AGAINST DEPOSITE LOAN</strong> <br>
+                            You can avail a loan in Indian rupees against the security of Fixed Deposit Bond of the Surokha Nidhi Limited. The loan may be used to meet emergency financial requirements, to carry on business activities. You need not close the deposit prematurely and can avail the loan.<br>
+                        </li>
+                        <hr>
+                        <li>
+                            <strong>GOLD LOAN</strong><br>
+                            Surokha Nidhi Ltd. designed to provide liquidity against gold and gold Jewelers without having to sell them. Let your gold help you bring the golden period in life.<br>
+                        </li>
+                    </ol>
+                </div>
+        </div>
+        </div>
+
+</div>
+</div>
+
+
+
+    <!-- professional experience ends here  -->
+
+
+     <!-- achievement-contact starts from here  -->
+
+    <div class="achievemnet-contact">
+        
+        <div class="contact col-4" id="contact-id">
+            <h2>CONTACT ME</h2>
+            <hr class="dotted-hr">
+
+            <form action="ramkantapramanik9679@gmail.com" method="post" enctype="text/plain">
+                <p><input type="text" placeholder="Your Name" name="name"></p>
+                <p><input type="email" placeholder="Your Email" name="email"></p>
+                <textarea name="message" id="" cols="30" rows="10" placeholder="Your Message Here"></textarea>
+                <button type="submit">SEND</button>
+                <button type="reset">RESET</button>
+            </form>
+        </div>
+
+        <div class="contact-links col-4">
+            <h2>More ways to Contact</h2>
+            <hr class="dotted-hr">
+            <div class="media-buttons">
+                
+                <button class="btn" onclick="window.open('https://www.facebook.com/ramkanta.pramanik.9')" class="btn request-callback"><i class="fa fa-facebook" style="color:  #3b5998;" aria-hidden="true"></i></button>
+                
+                <button class="btn" onclick="window.open('https://www.linkedin.com/in/ramkanta-pramanik-96123a1ba/')" class="btn request-callback"><i class="fa fa-linkedin" style="color:  #3b5998;" aria-hidden="true"></i></button>
+        <button class="btn" onclick="window.open('https://wa.me/+918918831514')" class="btn request-callback"><i class="fa fa-whatsapp" style="color:  #3b5998;" aria-hidden="true"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- achievement-contact ends here  -->
+
+      <!-- footer starts from here  -->
+
+    <div class="footer">
+        <div class="footer-menu col-6">
+            <a href="#">Home</a>
+            <a href="#about-us-id">About Us</a>
+            <a href="#scheme-id">Scheme</a>
+            <a href="#contact-id">Contact Us</a>
+        </div>
+
+        <div class="footer-desc col-6">
+            &copy; Surokha Nidhi Ltd. 2022. Developed with <span style="color: red; font-size: 1.5rem;">❤</span> by Surokha .
+        </div>
+    </div>
+    <!-- footer ends here  -->
+
+
+
+</body>
+</html>
